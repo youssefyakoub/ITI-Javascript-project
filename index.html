@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="../../assets/img/logo_circle.png" />
+
+    <title>Book Haven</title>
+  </head>
+  <body>
+    <header>
+      <div class="head">
+        <a href="#"> <img src="assets/img/logo.svg" class="logo" alt="" /></a>
+        <nav>
+          <ul id="navLinks"></ul>
+        </nav>
+        <div class="head-btns">
+          <a href="/modules/login/login.html" id="login" class="login">Login</a>
+          <a
+            href="/modules/register/register.html"
+            id="register"
+            class="register"
+            >Register</a
+          >
+          <a href="/modules/history/history.html" id="history" class="register"
+            >History</a
+          >
+          <a href="index.html" id="logout" class="logout">Log out</a>
+          <a href="./modules/shopping_cart/shopping_cart.html"
+            ><i class="fa-solid fa-cart-shopping"></i
+          ></a>
+          <a href="./modules/favourites/favourite.html"
+            ><i class="fa-solid fa-heart"></i
+          ></a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="section1">
+        <div>
+          <h1>
+            Unleash Your <span>Creativity</span> <br />
+            With The Power Of A Book
+          </h1>
+          <p>
+            This should be used to tell a story and let your users know a <br />
+            little more about your product or service.
+          </p>
+        </div>
+        <div class="secton1-img">
+          <img
+            src="assets/img/creative-composition-world-book-day.png"
+            alt=""
+          />
+        </div>
+      </section>
+      <hr id="breakPointMainAndNewArrival"  />
+      <section id="slider-container">
+        <h2 class="new">New Arrival</h2>
+        <button class="slider-left-btn">
+          <i class="fa-solid fa-arrow-left"></i>
+        </button>
+        <div id="slider">
+          <div class="slider-track"></div>
+        </div>
+        <button class="slider-right-btn">
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </section>
+      <hr />
+      <section class="filters">
+        <div class="search-bar">
+          <span class="magnifying"
+            ><i class="fa-solid fa-magnifying-glass"></i
+          ></span>
+          <input
+            type="search"
+            class="search"
+            id="search"
+            placeholder="Search"
+          />
+        </div>
+        <!---------------------------------  FILTERS  ------------------------------------------------->
+
+        <div class="filter-bar">
+          <label for="filter">
+            <span class="filter"><i class="fa-solid fa-filter"></i></span>
+          </label>
+          <div class="custom-select-wrapper">
+            <select id="options" class="custom-select">
+              <option value="default">Default</option>
+              <option value="High To Low">High To Low</option>
+              <option value="Low To High">Low To High</option>
+            </select>
+          </div>
+        </div>
+      </section>
+
+      <section id="cards"></section>
+    </main>
+
+    <div id="arrow" class="arrow"><i class="fa-solid fa-arrow-up"></i></div>
+
+    <footer id="footer">
+      <div>
+        <img src="assets/img/logo.svg" alt="" />
+        <p>
+          “Book Haven” is a pioneer in the field of book selling in Egypt, and
+          it includes an exceptional selection of the most prominent and
+          important Arabic and foreign titles at prices within the reader’s
+          reach.
+        </p>
+      </div>
+      <div>
+        <h2>Categories :</h2>
+        <ul class="cat">
+          <li><a href="./modules/categories/categories.html#Classic1">Classic</a></li>
+          <li><a href="./modules/categories/categories.html#Fiction1">Fiction</a></li>
+          <li><a href="./modules/categories/categories.html#Dystopian1">Dystopian</a></li>
+          <li><a href="./modules/categories/categories.html#Romance1">Romance</a></li>
+          <li><a href="./modules/categories/categories.html#Adventure1">Adventure</a></li>
+          <li><a href="./modules/categories/categories.html#Fantasy1">Fantasy</a></li>
+          <li><a href="./modules/categories/categories.html#Epic1">Epic</a></li>
+
+        </ul>
+      </div>
+      <div>
+        <h2>Contact Us :</h2>
+        <ul>
+          <li>
+            <a href=""><i class="fa-brands fa-facebook"></i>book haven</a>
+          </li>
+          <li>
+            <a href=""><i class="fa-brands fa-instagram"></i>book haven</a>
+          </li>
+          <li>
+            <a href=""><i class="fa-brands fa-whatsapp"></i>01234567890</a>
+          </li>
+          <li>
+            <a href=""><i class="fa-brands fa-tiktok"></i>book haven</a>
+          </li>
+          <li>
+            <a href=""
+              ><i class="fa-solid fa-envelope"></i>bookhaven@gmail.com</a
+            >
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script type="module" src="main.js"></script>
+    <script type="module" src="api/filter.js"></script>
+  </body>
+</html>
